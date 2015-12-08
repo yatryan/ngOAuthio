@@ -1,7 +1,7 @@
 {
   "name": "ngOAuthio",
   "version": "1.0.0",
-  "repository": "yatryan/ngOAuthio"
+  "repository": "yatryan/ngOAuthio",
   "description": "Angularjs provider for OAuthio",
   "main": "Gruntfile.js",
   "scripts": {
