@@ -9,6 +9,19 @@ Allows to use [OAuth.io](http://oauth.io/) with AngularJS
 ## Example
 
 ```
+angular.module('myApp', []).factory('rootCtrl', function($scope, OAuth) {
+
+    //initialize OAuth.io with public key of the application
+    OAuth.initialize('public-key', {
+        cache: true
+    });
+
+    var authorizationResult;
+
+    $scope.connectTwitter = function() {
+        authorizationResult = OAuth.create("twitter");
+    };
+});
 ```
 
 ## Installing via Bower
@@ -21,6 +34,6 @@ It uses Karma to ensure the quality of the code. The easiest way to run these ch
 
 ```sh
 npm install -g grunt-cli
-npm install && bower install
+npm install
 grunt karma
 ```
