@@ -1,6 +1,10 @@
 language: node_js
 node_js:
-  - 0.10
+  - "5.0"
+  - "4.1"
+  - "4.0"
+  - "0.12"
+
 
 before_script:
   - export DISPLAY=:99.0
@@ -9,7 +13,6 @@ before_script:
   - npm install -g grunt-cli
   - npm install -g bower
   - npm install
-  - bower install
 
 script:
-  grunt build
+  grunt
