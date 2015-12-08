@@ -1,0 +1,32 @@
+{
+  "name": "ng-oauthio",
+  "version": "1.0.0",
+  "authors": [
+    "Taylor Ryan <spiketmr@gmail.com>"
+  ],
+  "description": "AngularJS provider for OAuthio",
+  "keywords": [
+    "angularjs",
+    "OAuthio",
+    "oauth"
+  ],
+  "main": [
+    "./dist/ng-oauthio.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4",
+    "oauth-js": "~0.5.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4"
+  },
+  "license": "MIT",
+  "homepage": "http://yatryan.com"
+}
